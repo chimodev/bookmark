@@ -20,14 +20,21 @@ document.getElementsByClassName
 const qa = document.querySelectorAll(".qa")
 
 qa.forEach((e) => {
-    e.querySelector(".question").addEventListener("click",()=>{
-        let answer = e.querySelector(".answer")
+    let question = e.querySelector(".question")
+    let answer = e.querySelector(".answer")
+    let img = question.querySelector("img")
+    
+    question.addEventListener("click",()=>{
 
         console.log(answer.style.height)
         if(answer.style.height === "0px" || !answer.style.height){
             answer.style.height = answer.scrollHeight + "px"
+            img.src = "images/icon-arrow-red.svg"
+            
         }else{
             answer.style.height = "0px"
+            img.src = "images/icon-arrow.svg"
+            
         }
     })
 });
