@@ -505,6 +505,7 @@ input{
 
 /* animation */
 
+/*
 .hd-right{
     transform: translateX(100%);
     opacity: 0;
@@ -521,7 +522,7 @@ input{
     transform: translateX(0);
     opacity: 1;
 }
-
+*/
 
 .feature{
     display: none;
