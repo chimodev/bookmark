@@ -41,6 +41,8 @@ qa.forEach((e) => {
 
 /* scroll */
 
+
+/*
 const left = document.querySelectorAll(".hd-left")
 const right = document.querySelectorAll(".hd-right")
 const down = document.querySelectorAll(".hd-down")
@@ -67,6 +69,8 @@ function show(top,el){
         el.classList.remove("show")
     }
 }
+
+*/
 
 function scrollToEl(element){
     const header = document.querySelector("header").getBoundingClientRect().height
